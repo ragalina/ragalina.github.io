@@ -101,7 +101,7 @@
 /* Footer */
 .footer {
   padding: 1%;
-  background: rgba(76, 90, 138) !important;
+  background-color: rgba(76, 90, 138) !important;
   color: white;
 }
 
