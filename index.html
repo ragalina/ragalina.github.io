@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -21,7 +22,7 @@
   </head>
   <body>
     <!-- Nav Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-light fixed-top">
       <a class="navbar-brand px-2" href="#intro">Ragalina Palaka</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -42,22 +43,33 @@
     </nav>
     <!-- Intro Page -->
     <a name="intro"></a>
-    <h1 class="intro vert-align text-center">👋 Hi! I'm Ragalina Palaka.</h1>
+    <div class="intro" 
+        style="
+          background-image: url('assets/dark-blue.png');
+          background-size: cover;
+          background-position: center;
+        ">
+      <h1 class="text-center intro-txt">👋 Hello World! I'm Ragalina Palaka.</h1>
+    </div>
     <!-- About Me Page -->
     <div class="about">
       <a name="aboutme"></a>
       <h2 class="title">About Me</h2>
         <div class="row">
-          <p class="about-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit nunc eu lectus lacinia, in sagittis eros vehicula. Etiam sed quam condimentum ex malesuada sodales in vel leo. Praesent sit amet nibh nunc. Vestibulum bibendum quam neque. Ut varius felis quis tortor mattis gravida in et sapien. Praesent varius arcu lacus, eu posuere orci lobortis non. Phasellus non orci ut metus vulputate efficitur. Phasellus porttitor suscipit ultricies. Nullam vehicula mi nec ipsum facilisis venenatis. Nunc viverra ullamcorper libero vel aliquam. Aliquam posuere porttitor nunc, at egestas massa facilisis ac.</p>
+          <p class="about-txt">I’m a high school student from the Bay Area interested in creating social impact with computer science. I hope to continue learning and working towards creating a more equitable future — one step at a time. <br><br>Currently, I serve as the Associate Director of Superposition, where I empower gender-minorities in STEM through hackathons, workshops, and chapters. This is partially fueled by my experiences with Kode with Klossy, where I learned about the need for diversity in tech, and my own experiences with Superposition, which inspired me to pursue computer science. Computer science interests me because of its interdisciplinary nature, and I explore this in my projects — from environmental racism to bioinformatics, through coding, I can explore it all. <br><br>Outside of school, I can be found playing badminton, taking a nap with my cat, or reading. My goal for this year is 50 books, and so far, my favorites are Educated by Tara Westover and The Nightingale by Kirstin Hannah! I enjoy traveling — I’ve been to 15 states & 5 countries (and counting!) — and trying new recipes, sometimes successfully. Finally, I love meeting new people, so feel free to reach out!</p>
           <div class="mr-auto col-box-2">
             <h3 class="text-center">Skills</h3>
-              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-              <li>Sed suscipit nunc eu lectus lacinia.</li>
+              <li>Programming languages: Java, C++, Python, HTML, CSS, SQL</li>
+              <li>Graphic Design & Social Media</li>
+              <li>Problem Solving</li>
+              <li> Time-management & Organization</li>
           </div>
           <div class="col-box-2">
             <h3 class="text-center">Interests</h3>
-              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-              <li>Sed suscipit nunc eu lectus lacinia.</li>
+              <li>Computer science (AI & ML, data science, and cryptography)</li>
+              <li>Ethics & biases in technology</li>
+              <li>Law & Activism</li>
+              <li>Sustainability & Environmental Science</li>
           </div>
         </div>
     </div>
@@ -65,13 +77,33 @@
     <a name="experiences"></a>
     <div class="experiences">
       <h2 class="title">What I Do</h3>
-        <div class="container">
-          <h3>Superposition</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit nunc eu lectus lacinia, in sagittis eros vehicula. Etiam sed quam condimentum ex malesuada sodales in vel leo. Praesent sit amet nibh nunc. Vestibulum bibendum quam neque. Ut varius felis quis tortor mattis gravida in et sapien.</p>
+        <div class="exp-txt">
+          <div class="row row-1">
+            <div class="col-sm-6">
+              <img src="assets/sp-team.jpg" class="exp-image img-fluid" alt="Superposition Team">
+            </div>
+            <div class="col-sm-6">
+              <h3>Superposition</h3>
+              <p class="subtitle">Associate Director (2020 - Present)</p>
+              <p>Superposition aims to bridge the gender gap in STEM through events, chapters and mentorship. I helped quadruple our number of chapters to a total of 115+ chapters and reach 800k+ people in 45 US states and 54 countries.</p>
+              <li>Organized Bay Area's largest all-women and non-binary hackathon for 763 hackers in 47 countries</li>
+              <li>Led Superposition V ambassador program of 50 people, responsible for 330 registrations (33% of total)</li>
+              <li>Directed planning for a hackathon in partnership with Uber & coordinated team of 40 Uber volunteers</li>
+            </div>
+            </div>
         </div>
-        <div class="container">
-          <h3>Badminton</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit nunc eu lectus lacinia, in sagittis eros vehicula. Etiam sed quam condimentum ex malesuada sodales in vel leo. Praesent sit amet nibh nunc. Vestibulum bibendum quam neque. Ut varius felis quis tortor mattis gravida in et sapien.</p>
+        <div class="exp-txt">
+          <div class="row row-1">
+            <div class="col-sm-6">
+              <img src="assets/yosemite.jpg" class="exp-image img-fluid" alt="Ragalina playing badminton">
+            </div>
+            <div class="col-sm-6">
+              <h3>Badminton</h3>
+              <p>Played competitive badminton at the national level for 9 years.</p>
+              <li>Singles Awards: Quarterfinalist at Jr. Nationals (‘19, ‘18, ‘16 & ‘14)</li> 
+              <li>Doubles Awards: 3rd at NorCal Regionals (‘20), 2nd at SJSU Smash-off (‘19), 6th at Junior International Trials (‘18</li>
+            </div>
+          </div>
         </div>
     </div>
     <!-- Projects Page -->
@@ -80,23 +112,26 @@
       <h2 class="title">Projects</h4>
         <div class="row">
           <div class="col-box-3 mr-auto">
-            <h3>Project Name</h3>
+              <img src="assets/cssi.png" class="proj-image img-fluid" alt="Picture of methods used">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit nunc eu lectus lacinia, in sagittis eros vehicula. Etiam sed quam condimentum ex malesuada sodales in vel leo. Praesent sit amet nibh nunc.</p>
           </div>
           <div class="col-box-3">
-            <h3>Project Name</h3>
+              <img src="assets/evergreen.png" class="proj-image img-fluid mx-auto d-block" alt="Evergreen website">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit nunc eu lectus lacinia, in sagittis eros vehicula. Etiam sed quam condimentum ex malesuada sodales in vel leo. Praesent sit amet nibh nunc.</p>
           </div>
           <div class="col-box-3">
-            <h3>Project Name</h3>
+              <img src="assets/evergreen.png" class="proj-image img-fluid mx-auto d-block" alt="Evergreen website">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit nunc eu lectus lacinia, in sagittis eros vehicula. Etiam sed quam condimentum ex malesuada sodales in vel leo. Praesent sit amet nibh nunc.</p>
           </div>
         </div>
       </div>
     </div>
     <!-- Footer -->
-    <!-- Footer -->
     <div class="bg-light text-center footer">
+      <a href="mailto:ragalinapalaka@gmail.com" target="_blank">
+      <img src="assets/email-logo.png" alt="Email icon" class="icon"></a>
+      <a href="https://www.linkedin.com/in/ragalina-palaka/" target="_blank">
+      <img src="assets/linkedin-logo.png" alt="LinkedIn icon" class="icon"></a>
       <p> Made with ♡ by Ragalina Palaka </p>
     </div>
     <script src="script.js"></script>
