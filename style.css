@@ -1,6 +1,7 @@
 :root {
   --bg: #F3E4CD;
   --bg2: #F1E6E4;
+  --nav: #E8DAEE;
 }
 
 .vert-align {
@@ -14,10 +15,31 @@
   align-items: center;
   display: flex;
   justify-content: center;
+  color: white;
 }
 
 .navbar {
-  background: rgba(238, 218, 232) !important;
+  background: rgba(12, 45, 102) !important;
+}
+
+.nav-item {
+  color: white;
+}
+
+h1 {
+  margin: 0%;
+  color: white;
+}
+
+body {
+  color: white;
+  background: linear-gradient(#174BA4, #4c5a8a);
+}
+
+/* for Skils & Intersts and Experiences boxes */
+.row {
+  width: 80%;
+  margin: auto;
 }
 
 /* Intro/First Page */
@@ -29,27 +51,27 @@
   padding: 0%;
 }
 
+.intro-txt {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .about {
   width: 100vw;
   min-height: 100vh;
-  background: linear-gradient(#d8defe, #a8c2e5);
   /* trying to overlay an image & gradient: background: linear-gradient(rgba(216, 222, 254, 0.5), rgba(168, 194, 229, 0.5)), url(https://thumbs2.imgbox.com/be/ba/m728wUTj_t.png); */
   padding-bottom: 3%;
   margin: 0%;
   padding: 0%;
 }
 
-/* for Skils & Intersts boxes */
-.row {
-  width: 80%;
-  margin: auto;
-}
-
 /* keep About Me box at 80% -- basically .container */
 .about-txt {
   width: 100%;
   margin: 3% auto 0% auto;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
   padding: 3%;
 }
@@ -57,7 +79,7 @@
 .col-box-2 {
   padding: 4%;
   margin-top: 3%;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
   width: 48.33%;
 }
@@ -66,26 +88,37 @@
 .experiences {
   width: 100vw;
   min-height: 100vh;
-  background: linear-gradient(#a8c2e5, #7676b5);
   padding-bottom: 3%;
   margin: 0%;
   padding: 0%;
 }
 
-/* used for experience boxes -- very close to about me*/
-.container {
+.exp-image {
+  width: 50vw;
+  height: 50vh;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* exp-txt & row-1 are the reverse of about-txt & row
+   because the widths have to be reversed */
+.exp-txt {
   margin: 3% auto 0% auto;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
   padding: 3%;
   width: 80%;
+}
+
+.row-1 {
+  width: 100%;
+  margin: auto;
 }
 
 /* Projects/Fourth Page */
 .projects {
   width: 100vw;
   min-height: 100vh;
-  background: linear-gradient(#7676b5, #4c5a8a);
   padding-bottom: 3%;
 }
 
@@ -93,9 +126,17 @@
   padding: 3%;
   margin: auto;
   margin-top: 3%;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
   width: 31.66%;
+}
+
+.proj-image {
+  width: 25vw;
+  height: 25vh;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 7%;
 }
 
 /* Footer */
@@ -105,16 +146,26 @@
   color: white;
 }
 
+.icon {
+  height: 2%;
+  width: 2%;
+  color: white;
+  padding-bottom: 1%;
+}
+
 /* adjusts boxes for non-laptop screens */
 @media only screen and (max-width: 992px) {
-  .container {
-    width: 95%; 
+  .row {
+    width: 100%;
+  }
+  .exp-txt {
+    width: 95%;
+  }
+  .row-1 {
+    width: 100%;
   }
   .about-txt {
     width: 95%;
-  }
-  .row {
-    width: 100%;
   }
   .col-box-2 {
     width: 95%;
@@ -125,5 +176,31 @@
     width: 95%;
     margin: auto;
     margin-top: 3%;
+  }
+  .icon {
+    height: 4%;
+    width: 4%;
+    padding-bottom: 2%;
+  }
+  .exp-image {
+    border-radius: 10px;
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    object-fit: contain;
+  }
+  .proj-image {
+    margin-bottom: 5%;
+    margin: 0%;
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+  @media only screen and (max-width: 600px) {
+  .icon {
+    height: 6%;
+    width: 6%;
+    padding-bottom: 2%;
   }
 }
