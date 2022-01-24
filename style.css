@@ -1,0 +1,124 @@
+:root {
+  --bg: #F3E4CD;
+  --bg2: #F1E6E4;
+}
+
+.vert-align {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  padding-top: 5%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar {
+  background: rgba(238, 218, 232) !important;
+}
+
+/* Intro/First Page */
+.intro {
+  min-height: 100vh;
+  width: 100vw;
+  background: linear-gradient(#eedae8, #d8defe);
+  margin: 0%;
+  padding: 0%;
+}
+
+.about {
+  width: 100vw;
+  min-height: 100vh;
+  background: linear-gradient(#d8defe, #a8c2e5);
+  /* trying to overlay an image & gradient: background: linear-gradient(rgba(216, 222, 254, 0.5), rgba(168, 194, 229, 0.5)), url(https://thumbs2.imgbox.com/be/ba/m728wUTj_t.png); */
+  padding-bottom: 3%;
+  margin: 0%;
+  padding: 0%;
+}
+
+/* for Skils & Intersts boxes */
+.row {
+  width: 80%;
+  margin: auto;
+}
+
+/* keep About Me box at 80% -- basically .container */
+.about-txt {
+  width: 100%;
+  margin: 3% auto 0% auto;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  padding: 3%;
+}
+
+.col-box-2 {
+  padding: 4%;
+  margin-top: 3%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  width: 48.33%;
+}
+
+/* Experiences/Third Page */
+.experiences {
+  width: 100vw;
+  min-height: 100vh;
+  background: linear-gradient(#a8c2e5, #7676b5);
+  padding-bottom: 3%;
+  margin: 0%;
+  padding: 0%;
+}
+
+/* used for experience boxes -- very close to about me*/
+.container {
+  margin: 3% auto 0% auto;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  padding: 3%;
+  width: 80%;
+}
+
+/* Projects/Fourth Page */
+.projects {
+  width: 100vw;
+  min-height: 100vh;
+  background: linear-gradient(#7676b5, #4c5a8a);
+  padding-bottom: 3%;
+}
+
+.col-box-3 {
+  padding: 3%;
+  margin: auto;
+  margin-top: 3%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  width: 31.66%;
+}
+
+/* Footer */
+
+/* adjusts boxes for non-laptop screens */
+@media only screen and (max-width: 992px) {
+  .container {
+    width: 95%; 
+  }
+  .about-txt {
+    width: 95%;
+  }
+  .row {
+    width: 100%;
+  }
+  .col-box-2 {
+    width: 95%;
+    margin: auto;
+    margin-top: 3%
+  } 
+  .col-box-3 {
+    width: 95%;
+    margin: auto;
+    margin-top: 3%;
+  }
+}
