@@ -99,6 +99,9 @@
 }
 
 /* Footer */
+footer {
+  padding: 3%;
+}
 
 /* adjusts boxes for non-laptop screens */
 @media only screen and (max-width: 992px) {
