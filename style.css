@@ -1,7 +1,33 @@
 :root {
-  --bg: #F3E4CD;
-  --bg2: #F1E6E4;
-  --nav: #E8DAEE;
+  --nav: #2E2D40; 
+  --dark-gradient: #0E1237;
+  --dark-gradient2: #0E1237;
+  --light-gradient: #343F6D;
+  --light-gradient2: #3B3549;
+  --accent: #B0CDFF;
+  --accent2: #BFBBFF;
+  --subtitle: #A4A3D4;
+}
+
+h1, h2, h3 {
+  font-family: 'Cantarell', sans-serif;
+}
+
+body, p, li {
+  color: white;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+.link-style {
+  font-weight: 500;
+  color: var(--accent2);
+  text-decoration-line: underline;
+}
+
+.link-style:hover {
+  font-weight: bold;
+  color: var(--subtitle);
+  text-decoration-line: underline;
 }
 
 .vert-align {
@@ -12,28 +38,34 @@
 
 .title {
   padding-top: 5%;
+  margin-bottom: -1%;
   align-items: center;
   display: flex;
   justify-content: center;
-  color: white;
+  color: var(--accent);
+  font-style: italic;
 }
 
 .navbar {
-  background: rgba(12, 45, 102) !important;
+  background: var(--nav) !important;
 }
 
-.nav-item {
+.nav-link {
   color: white;
 }
 
-h1 {
-  margin: 0%;
-  color: white;
+.nav-link:hover {
+  color: var(--accent) !important;
 }
 
-body {
-  color: white;
-  background: linear-gradient(#174BA4, #4c5a8a);
+h3 {
+  color: var(--accent2);
+  font-family: 'Cantarell', sans-serif;
+}
+
+.subtitle {
+  color: var(--subtitle);
+  font-style: italic;
 }
 
 /* for Skils & Intersts and Experiences boxes */
@@ -44,24 +76,39 @@ body {
 
 /* Intro/First Page */
 .intro {
-  min-height: 100vh;
+  height: 100vh;
   width: 100vw;
-  background: linear-gradient(#eedae8, #d8defe);
+  background: linear-gradient(var(--nav), var(--light-gradient));
   margin: 0%;
   padding: 0%;
 }
 
 .intro-txt {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  line-height: 100vh;;
+  text-align: center;
 }
 
+/* to keep second line centered */
+.intro-txt p {
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.name {
+  margin: 0%;
+  color: var(--subtitle);
+  font-size: 5em;
+  font-style: italic;
+  font-family: 'Cantarell', sans-serif;
+}
+
+/* About Me/Second Page */
 .about {
   width: 100vw;
   min-height: 100vh;
   /* trying to overlay an image & gradient: background: linear-gradient(rgba(216, 222, 254, 0.5), rgba(168, 194, 229, 0.5)), url(https://thumbs2.imgbox.com/be/ba/m728wUTj_t.png); */
+  background: linear-gradient(var(--light-gradient), var(--dark-gradient));
   padding-bottom: 3%;
   margin: 0%;
   padding: 0%;
@@ -91,13 +138,7 @@ body {
   padding-bottom: 3%;
   margin: 0%;
   padding: 0%;
-}
-
-.exp-image {
-  width: 50vw;
-  height: 50vh;
-  object-fit: cover;
-  border-radius: 10px;
+  background: linear-gradient(var(--dark-gradient), var(--light-gradient2));
 }
 
 /* exp-txt & row-1 are the reverse of about-txt & row
@@ -110,6 +151,18 @@ body {
   width: 80%;
 }
 
+.exp-image {
+  width: 50vw;
+  height: 50vh;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.exp-image:hover {
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out; 
+}
+
 .row-1 {
   width: 100%;
   margin: auto;
@@ -120,6 +173,7 @@ body {
   width: 100vw;
   min-height: 100vh;
   padding-bottom: 3%;
+  background: linear-gradient(var(--light-gradient2), var(--dark-gradient2));
 }
 
 .col-box-3 {
@@ -139,18 +193,28 @@ body {
   margin-bottom: 7%;
 }
 
+.proj-image:hover {
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out; 
+}
+
 /* Footer */
 .footer {
   padding: 1%;
-  background: rgba(76, 90, 138) !important;
+  background: var(--light-gradient) !important;
   color: white;
 }
 
 .icon {
   height: 2%;
   width: 2%;
-  color: white;
-  padding-bottom: 1%;
+  padding-top: 1%;
+  padding-bottom: 0.5%;
+}
+
+.icon:hover {
+    transform: scale(1.25);
+    transition: all 0.2s ease-in-out; 
 }
 
 /* adjusts boxes for non-laptop screens */
@@ -183,17 +247,20 @@ body {
     padding-bottom: 2%;
   }
   .exp-image {
+    display: flex;
+    float: up;
+    margin-bottom: 5%;
     border-radius: 10px;
-    margin: 0%;
-    padding: 0%;
-    width: 100%;
-    object-fit: contain;
+    width: 100vw;
+    max-height: 60vw;
   }
   .proj-image {
+    display: flex;
+    float: up;
     margin-bottom: 5%;
-    margin: 0%;
-    width: 100%;
-    object-fit: contain;
+    width: 100vw;
+    max-height: 60vw;
+    border-radius: 10px !important;
   }
 }
 
