@@ -190,7 +190,7 @@ h3 {
   height: 25vh;
   object-fit: cover;
   border-radius: 10px;
-  margin-bottom: 7%;
+  margin: 7% auto;
 }
 
 .proj-image:hover {
@@ -257,7 +257,7 @@ h3 {
   .proj-image {
     display: flex;
     float: up;
-    margin-bottom: 5%;
+    margin: 5% auto;
     width: 100vw;
     max-height: 60vw;
     border-radius: 10px !important;
